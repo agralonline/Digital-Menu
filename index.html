@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digital Restaurant Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="192.png" />
+  <meta name="theme-color" content="#1168e6" />
+</head>
+<body>
+  <header>
+    <div class="logo-box">
+      <img id="restaurantLogo" src="192.png" alt="Restaurant Logo">
+      <span class="restaurant-name" id="restaurantName">Ristorante Demo</span>
+    </div>
+    <div>
+      <select id="languageSelect" class="language-select"></select>
+      <button id="adminPageBtn" class="admin-btn" onclick="window.location.href='admin.html'">Admin</button>
+    </div>
+  </header>
+  <nav>
+    <div class="main-categories" id="categoryBtns"></div>
+    <div class="submenu-bar" id="submenuBar" style="display:none;"></div>
+  </nav>
+  <div class="search-bar">
+    <input id="searchInput" type="text" placeholder="Cerca piatto...">
+  </div>
+  <section>
+    <div id="specialsSection">
+      <div class="menu-section-title" id="specialsTitle"></div>
+      <div class="menu-grid specials-grid" id="specialsGrid"></div>
+    </div>
+    <div id="giornoSection">
+      <div class="menu-section-title" id="giornoTitle"></div>
+      <div class="menu-grid menu-giorno-grid" id="giornoGrid"></div>
+    </div>
+    <div class="menu-section-title" id="categoryTitle"></div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+  <footer style="text-align:center;margin:2em 0 1.2em;color:#6974b1;font-size:0.97em;">
+    <div id="qrSection" style="margin-bottom:0.5em;"></div>
+    <span>
+      <img src="logo-agralonline.png" alt="AgralOnline Logo" style="height:26px;vertical-align:middle;margin-right:6px;">
+      App sviluppata da <a href="https://agralonline.com" style="color:#1168e6;font-weight:bold;text-decoration:none;" target="_blank">AgralOnline.com</a>
+    </span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
